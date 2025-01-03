@@ -11,12 +11,12 @@ export default function Feature() {
 
         <p className="text-center m-4 mt-4 text-sm text-black sm:text-base md:mb-12 lg:mb-16 animate-fade-in-up delay-100">
           In the fast-evolving world of technology, staying ahead requires not
-          just knowledge but a deep understanding of its nuances. Kousar Shah's
+          just knowledge but a deep understanding of its nuances. Kousar Shah
           Tech Chronicles Blog offers readers a unique journey through the
           cutting-edge developments and trends that shape our digital landscape.
           From AI innovations to the rise of new tech tools, this blog explores
           how technology is transforming industries, lifestyles, and the way we
-          think. Whether you're a tech enthusiast or a professional looking to
+          think. Whether you are a tech enthusiast or a professional looking to
           stay informed, Tech Chronicles is your guide to navigating the secrets
           of modern technology.
         </p>
