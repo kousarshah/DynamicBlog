@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { Card, CardContent, CardTitle } from "../components/ui/card";
 interface BlogCardProps {
@@ -6,7 +7,7 @@ interface BlogCardProps {
     title: string;
     description: string;
     date: string;
-    imageUrl: string;
+    ImageUrl: string;
   };
   isDarkBackground: boolean;
 }
@@ -19,7 +20,7 @@ export default function BlogCard({ post, isDarkBackground }: BlogCardProps) {
       } rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300`}
     >
       <Image
-        src={post.imageUrl}
+        src={post.ImageUrl}
         alt={post.title}
         className="w-full h-48 object-cover rounded-t-lg"
       />
