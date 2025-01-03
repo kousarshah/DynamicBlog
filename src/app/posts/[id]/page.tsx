@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 import CommentSection from "@/components/CommentSection";
 import AuthorCard from "@/components/AuthorCard";
