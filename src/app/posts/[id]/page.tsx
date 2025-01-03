@@ -104,71 +104,47 @@ const posts = [
     ImageUrl: "/images/img12.png",
   },
 ];
+ 
 
-// interface Params {
-//   id: string;
-// }
+interface Params {
+  id: string;
+}
 
-// export default function Post({ params }: { params: Params }) {
-//   const { id } = params; // Now TypeScript knows `params` has an `id` property
-
-//   const post = posts.find((p) => p.id === id);
-
-//   if (!post) {
-//     return <h2 className="text-2xl font-bold text-center mt-10">Post Not Found</h2>;
-//   }
-
-//   return (
-//     <div className="max-w-3xl mx-auto p-5">
-//       <h1 className="md:text-4xl text-3xl font-bold text-red-600 text-center">
-//         {post.title}
-//       </h1>
-
-//       {post.imageUrl && (
-//         <img src={post.imageUrl} alt={post.title} />
-//       )}
-
-//       <CommentSection postId={post.id} />
-//       <AuthorCard />
-//       <Footer/>
-//     </div>
-//   );
-// }
-
-
-
-
-export default function Post({ params }: { params: { id: string } }) {
+export default function Post({ params }: { params: Params }) {
   const { id } = params;
   const post = posts.find((p) => p.id === id);
 
   if (!post) {
     return (
-      <h2 className="text-2xl font-bold text-center mt-10"> Post Not Found </h2>
+      <h2 className="text-2xl font-bold text-center mt-10">Post Not Found</h2>
     );
   }
 
+  // Render paragraphs from description
   const renderParagraphs = (description: string) => {
-    return description.split("/n").map((para, index) => (
+    return description.split("\n").map((para, index) => (
       <p key={index} className="mt-4 text-justify">
-        {para.trim()}{" "}
+        {para.trim()}
       </p>
     ));
   };
-  renderParagraphs();
 
   return (
     <div className="max-w-3xl mx-auto p-5">
-      <h1 className="md:text-4xl text-3xl font-bold text-red-600 text-center ">
-        {" "}
+      <h1 className="md:text-4xl text-3xl font-bold text-red-600 text-center">
         {post.title}
       </h1>
 
-      {post.ImageUrl && (
+      {post.imageUrl && (
         <Image
-        src={post.ImageUrl}
-        alt={post.title}/>
+          src={post.imageUrl}
+          alt={post.title}
+          width={800}
+          height={500}
+        />
       )}
+
+      <div>{renderParagraphs(post.description)}</div>
 
       <CommentSection postId={post.id} />
       <AuthorCard />
@@ -176,6 +152,52 @@ export default function Post({ params }: { params: { id: string } }) {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+// export default function Post({ params }: { params: { id: string } }) {
+//   const { id } = params;
+//   const post = posts.find((p) => p.id === id);
+
+//   if (!post) {
+//     return (
+//       <h2 className="text-2xl font-bold text-center mt-10"> Post Not Found </h2>
+//     );
+//   }
+
+//   const renderParagraphs = (description: string) => {
+//     return description.split("/n").map((para, index) => (
+//       <p key={index} className="mt-4 text-justify">
+//         {para.trim()}{" "}
+//       </p>
+//     ));
+//   };
+//   renderParagraphs();
+
+//   return (
+//     <div className="max-w-3xl mx-auto p-5">
+//       <h1 className="md:text-4xl text-3xl font-bold text-red-600 text-center ">
+//         {" "}
+//         {post.title}
+//       </h1>
+
+//       {post.ImageUrl && (
+//         <Image
+//         src={post.ImageUrl}
+//         alt={post.title}/>
+//       )}
+
+//       <CommentSection postId={post.id} />
+//       <AuthorCard />
+//       <Footer />
+//     </div>
+//   );
+// }
 
 
 
