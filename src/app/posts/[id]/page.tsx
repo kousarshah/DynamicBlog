@@ -164,7 +164,7 @@ export default function Post({ params }: { params: { id: string } }) {
       </h1>
 
       {post.imageUrl && (
-        <img
+        <Image
         src={post.imageUrl}
         alt={post.title}/>
       )}
