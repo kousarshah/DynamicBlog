@@ -18,10 +18,10 @@ export default function AuthorCard() {
       </div>
 
       <p className="mt-4 text-black leading-relaxed">
-        Sundar is the CEO of Google and Alphabet and serves on Alphabet's Board
+        Sundar is the CEO of Google and Alphabet and serves on Alphabet Board
         of Directors. He joined Google in 2004 and helped lead the development
         of Google Toolbar and then Google Chrome, which grew to become the
-        world's most popular internet browser.
+        world most popular internet browser.
       </p>
 
       <div className="mt-4 flex space-x-3">
