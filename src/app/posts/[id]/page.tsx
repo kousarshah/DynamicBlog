@@ -10,7 +10,7 @@ const posts = [
     title: "The Modern Nomad: Exploring Digital Lifestyles",
     description:
       "This blog dives into the world of digital nomads, featuring tips on how to travel while working remotely, the best countries to work from, and tools for maintaining productivity on the go.",
-    imageUrl: "/images/img1.jpg",
+    ImageUrl: "/images/img1.jpg",
   },
   {
     id: "2",
@@ -18,7 +18,7 @@ const posts = [
     description:
       "This blog explores sustainable practices you can integrate into your daily life, from zero-waste solutions to energy-saving tips and sustainable food practices.",
 
-    imageUrl: "/images/img2.webp",
+  ImageUrl: "/images/img2.webp",
   },
   {
     id: "3",
@@ -26,7 +26,7 @@ const posts = [
     description:
       "A deep dive into the world of AI, from its evolution to the latest trends, applications, and ethical implications of its development.",
 
-    imageUrl: "/images/img3.png",
+    ImageUrl: "/images/img3.png",
   },
   {
     id: "4",
@@ -34,7 +34,7 @@ const posts = [
     description:
       "Join us on a journey around the globe as we explore diverse cuisines, hidden food gems, and culinary traditions of different countries.",
 
-    imageUrl: "/images/img4.jpg",
+    ImageUrl: "/images/img4.jpg",
   },
   {
     id: "5",
@@ -42,7 +42,7 @@ const posts = [
     description:
       "This blog focuses on meditation, mindfulness practices, and how to achieve mental clarity and stress reduction in today’s fast-paced world.",
 
-    imageUrl: "/images/img5.jpg",
+  ImageUrl: "/images/img5.jpg",
   },
   {
     id: "6",
@@ -50,7 +50,7 @@ const posts = [
     description:
       "A blog dedicated to physical, mental, and emotional wellness, covering exercise routines, nutrition, and mindfulness techniques for a balanced lifestyle",
 
-    imageUrl: "/images/img6.png",
+    ImageUrl: "/images/img6.png",
   },
   {
     id: "7",
@@ -58,7 +58,7 @@ const posts = [
     description:
       "This blog provides advice on raising children in a digital world, covering screen time limits, educational apps, and tech-related parenting challenges.",
 
-    imageUrl: "/images/img7.webp",
+  ImageUrl: "/images/img7.webp",
   },
   {
     id: "8",
@@ -66,7 +66,7 @@ const posts = [
     description:
       "Discover eco-friendly fashion brands, sustainable fabrics, and tips for creating a sustainable wardrobe without compromising style.",
 
-    imageUrl: "/images/img8.png",
+    ImageUrl: "/images/img8.png",
   },
   {
     id: "9",
@@ -74,7 +74,7 @@ const posts = [
     description:
       "Whether you have a balcony, rooftop, or small backyard, this blog offers expert gardening tips to help you grow your own fresh vegetables and herbs.",
 
-    imageUrl: "/images/img9.png",
+    ImageUrl: "/images/img9.png",
   },
   {
     id: "10",
@@ -82,7 +82,7 @@ const posts = [
     description:
       "Focused on remote work, this blog covers strategies for staying productive, managing work-life balance, and creating an effective home office environment.",
 
-    imageUrl: "/images/img10.png",
+    ImageUrl: "/images/img10.png",
   },
 
   {
@@ -91,7 +91,7 @@ const posts = [
     description:
       "Explore the shift towards remote work, its benefits, and how its shaping the future of employment. Learn how to build a productive home office and maintain a healthy work-life balance",
 
-    imageUrl: "/images/img11.png",
+    ImageUrl: "/images/img11.png",
   },
 
   {
@@ -100,7 +100,7 @@ const posts = [
       " The Future of Artificial Intelligence: Opportunities and Challenges",
     description:
       " Dive into the world of AI and explore its potential to revolutionize industries. Learn about the benefits, challenges, and ethical considerations surrounding AI technologies.",
-    imageUrl: "/images/img12.png",
+    ImageUrl: "/images/img12.png",
   },
 ];
 
